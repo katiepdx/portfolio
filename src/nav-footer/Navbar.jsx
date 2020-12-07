@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import'./Navbar.scss'
+import './NavFooter.scss'
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div>
       <nav>
@@ -20,5 +20,3 @@ const Navbar = () => {
     </div>
   )
 }
-
-export default Navbar
