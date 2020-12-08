@@ -6,16 +6,13 @@ export const Navbar = () => {
   return (
     <div>
       <nav>
-        <li><Link to="/">About</Link></li>
-        <div>|</div>
+        <Link to="/">About</Link>
 
-        <li><Link to="/tech-stack">Tech Stack</Link></li>
-        <div>|</div>
+        <Link to="/tech-stack">Tech Stack</Link>
 
-        <li><Link to="/projects">Projects</Link></li>
-        <div>|</div>
+        <Link to="/projects">Projects</Link>
 
-        <li><Link to="/contact">Contact</Link></li>
+        <Link to="/contact">Contact</Link>
       </nav>
     </div>
   )

@@ -9,30 +9,35 @@
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+
+  text-align: center;
+  align-items: center;
+
+  min-height: 10vh;
+  max-height: fit-content;
+
   background-color: pink;
   list-style-type: none;
   font-family: 'Fredoka One', cursive;
-  align-items: center;
-
-  li {
-    font-size: 1.5rem;
-    margin: 2%;
-  }
 
   a {
     text-decoration: none;
     color: var(--black);
+    font-size: 1.5rem;
+    margin: 2%;
   }
 
   a:hover {
     text-decoration: underline;
   }
 
-  div {
-    font-size: 1.2rem;
+  @media (max-width: 470px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
+    min-width: 100vw;
   }
 }
 
@@ -41,7 +46,8 @@ nav {
   background-color: var(--blue);
   position: fixed;
 
-  height: 5vh;
+  min-height: 5vh;
+  max-height: fit-content;
   width: 100%;
 
   left: 0;
