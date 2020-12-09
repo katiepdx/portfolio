@@ -8,7 +8,7 @@ import { Footer } from './nav-footer/Footer';
 import { Navbar } from './nav-footer/Navbar';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { Projects } from './pages/Projects';
+import { Projects } from './pages/Projects/Projects';
 import { TechStack } from './pages/TechStack';
 
 export default function App() {
