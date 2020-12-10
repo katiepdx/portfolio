@@ -35,10 +35,21 @@
     }
 
     @media (max-width: 1023px) {
-      background-color: var(--grey);
-
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+.project-link-icons {
+  img {
+    height: 30px;
+    width: 30px;
+    padding-right: 2%;
+  }
+
+  .github-icon {
+    height: 33px;
+    width: 33px;
   }
 }
