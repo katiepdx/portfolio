@@ -1,8 +1,8 @@
 import React from 'react'
 import './Projects.scss'
-import githubIcon from '../../assets/github-icon.png'
-import netlifyIcon from '../../assets/netlify-icon.png'
-import herokuIcon from '../../assets/heroku-icon.png'
+import githubIcon from '../../assets/icons/github-icon.png'
+import netlifyIcon from '../../assets/icons/netlify-icon.png'
+import herokuIcon from '../../assets/icons/heroku-icon.png'
 
 export const CumulusProject = () => {
   return (
@@ -17,7 +17,7 @@ export const CumulusProject = () => {
         </p>
         <div className='project-link-icons'>
           <a href="https://github.com/CumulusWeatherApp" target="_blank" rel="noreferrer">
-            <img src={githubIcon} alt="cumulus weather app github organization link" className='github-icon'/>
+            <img src={githubIcon} alt="cumulus weather app github organization link" className='github-icon' />
           </a>
 
           <a href="https://cumuli.netlify.app/" target="_blank" rel="noreferrer">

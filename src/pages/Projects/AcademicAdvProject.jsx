@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.scss'
-import githubIcon from '../../assets/github-icon.png'
-import linkIcon from '../../assets/link-icon.png'
+import githubIcon from '../../assets/icons/github-icon.png'
+import linkIcon from '../../assets/icons/link-icon.png'
 
 // image gallery slider imports
 import ImageGallery from 'react-image-gallery'

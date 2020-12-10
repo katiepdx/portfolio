@@ -1,7 +1,7 @@
 import React from 'react'
 import './Projects.scss'
-import githubIcon from '../../assets/github-icon.png'
-import herokuIcon from '../../assets/heroku-icon.png'
+import githubIcon from '../../assets/icons/github-icon.png'
+import herokuIcon from '../../assets/icons/heroku-icon.png'
 
 export const AlchemyNetworkrProject = () => {
   return (
@@ -16,7 +16,7 @@ export const AlchemyNetworkrProject = () => {
         </p>
         <div className='project-link-icons'>
           <a href="https://github.com/Alchemy-Networkr" target="_blank" rel="noreferrer">
-            <img src={githubIcon} alt="alchemy networkr github organization link" className='github-icon'/>
+            <img src={githubIcon} alt="alchemy networkr github organization link" className='github-icon' />
           </a>
 
           <a href="https://networkr-be.herokuapp.com/" target="_blank" rel="noreferrer">
