@@ -4,7 +4,24 @@ import githubIcon from '../../assets/icons/github-icon.png'
 import netlifyIcon from '../../assets/icons/netlify-icon.png'
 import herokuIcon from '../../assets/icons/heroku-icon.png'
 
+// image gallery slider imports
+import ImageGallery from 'react-image-gallery'
+import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import studentLogin from '../../assets/canary-assets/student-login.png'
+import studentCalibrate from '../../assets/canary-assets/student-calibrate-page.png'
+import studentAnswerQuestion from '../../assets/canary-assets/student-answer-question.png'
+import teacherLogin from '../../assets/canary-assets/teacher-login.png'
+import teacherDashboard from '../../assets/canary-assets/teacher-dashboard.png'
+
 export const TheCanaryProject = () => {
+  const siteScreenshots = [
+    { original: studentLogin, thumbnail: studentLogin },
+    { original: studentCalibrate, thumbnail: studentCalibrate },
+    { original: teacherLogin, thumbnail: teacherLogin },
+    { original: studentAnswerQuestion, thumbnail: studentAnswerQuestion },
+    { original: teacherDashboard, thumbnail: teacherDashboard }
+  ]
+
   return (
     <section>
       <div>
@@ -29,8 +46,8 @@ export const TheCanaryProject = () => {
           </a>
         </div>
       </div>
-      <div>
-        Project photo/video
+      <div className='image-gallery-slider'>
+        <ImageGallery items={siteScreenshots} />
       </div>
     </section>
   )
