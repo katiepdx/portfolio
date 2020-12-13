@@ -4,7 +4,21 @@ import githubIcon from '../../assets/icons/github-icon.png'
 import netlifyIcon from '../../assets/icons/netlify-icon.png'
 import herokuIcon from '../../assets/icons/heroku-icon.png'
 
+// image gallery slider imports
+import ImageGallery from 'react-image-gallery'
+import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import placeholder from '../../assets/placeholder.png'
+
+
 export const CumulusProject = () => {
+  const siteScreenshots = [
+    { original: placeholder, thumbnail: placeholder },
+    { original: placeholder, thumbnail: placeholder },
+    { original: placeholder, thumbnail: placeholder },
+    { original: placeholder, thumbnail: placeholder },
+    { original: placeholder, thumbnail: placeholder }
+  ]
+
   return (
     <section>
       <div>
@@ -29,8 +43,8 @@ export const CumulusProject = () => {
           </a>
         </div>
       </div>
-      <div>
-        Project photo/video
+      <div className='image-gallery-slider'>
+        <ImageGallery items={siteScreenshots} />
       </div>
     </section>
   )
