@@ -3,7 +3,24 @@ import './Projects.scss'
 import githubIcon from '../../assets/icons/github-icon.png'
 import herokuIcon from '../../assets/icons/heroku-icon.png'
 
+// image gallery slider imports
+import ImageGallery from 'react-image-gallery'
+import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css'
+import dashboard from '../../assets/networkr-assets/dashboard.png'
+import projects from '../../assets/networkr-assets/projects.png'
+import portfolios from '../../assets/networkr-assets/portfolios.png'
+import filter from '../../assets/networkr-assets/filter.png'
+import detailComments from '../../assets/networkr-assets/detail-comments.png'
+
 export const AlchemyNetworkrProject = () => {
+  const siteScreenshots = [
+    { original: dashboard, thumbnail: dashboard },
+    { original: projects, thumbnail: projects },
+    { original: portfolios, thumbnail: portfolios },
+    { original: filter, thumbnail: filter },
+    { original: detailComments, thumbnail: detailComments }
+  ]
+
   return (
     <section>
       <div>
@@ -24,8 +41,8 @@ export const AlchemyNetworkrProject = () => {
           </a>
         </div>
       </div>
-      <div>
-        Project photo/video
+      <div className='image-gallery-slider'>
+        <ImageGallery items={siteScreenshots} />
       </div>
     </section>
   )
