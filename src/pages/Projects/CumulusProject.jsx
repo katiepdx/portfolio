@@ -19,8 +19,7 @@ export const CumulusProject = () => {
     { original: desktopSearch, thumbnail: desktopSearch },
     { original: desktopFavorites, thumbnail: desktopFavorites },
     { original: desktopDetail, thumbnail: desktopDetail },
-    { original: mobileScreenshots, thumbnail: mobileScreenshots },
-
+    { original: mobileScreenshots, thumbnail: mobileScreenshots }
   ]
 
   return (
