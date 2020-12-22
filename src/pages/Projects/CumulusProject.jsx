@@ -7,16 +7,20 @@ import herokuIcon from '../../assets/icons/heroku-icon.png'
 // image gallery slider imports
 import ImageGallery from 'react-image-gallery'
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css'
-import placeholder from '../../assets/placeholder.png'
-
+import desktopLogin from '../../assets/cumulus-assets/desktop-login.png'
+import desktopSearch from '../../assets/cumulus-assets/desktop-search.png'
+import desktopFavorites from '../../assets/cumulus-assets/desktop-favorites.png'
+import desktopDetail from '../../assets/cumulus-assets/desktop-detail.png'
+import mobileScreenshots from '../../assets/cumulus-assets/mobile-screenshots.png'
 
 export const CumulusProject = () => {
   const siteScreenshots = [
-    { original: placeholder, thumbnail: placeholder },
-    { original: placeholder, thumbnail: placeholder },
-    { original: placeholder, thumbnail: placeholder },
-    { original: placeholder, thumbnail: placeholder },
-    { original: placeholder, thumbnail: placeholder }
+    { original: desktopLogin, thumbnail: desktopLogin },
+    { original: desktopSearch, thumbnail: desktopSearch },
+    { original: desktopFavorites, thumbnail: desktopFavorites },
+    { original: desktopDetail, thumbnail: desktopDetail },
+    { original: mobileScreenshots, thumbnail: mobileScreenshots },
+
   ]
 
   return (
