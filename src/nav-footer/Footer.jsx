@@ -1,5 +1,5 @@
 import React from 'react'
-import './NavFooter.scss'
+import '../../App.scss'
 
 export const Footer = () => {
   return (

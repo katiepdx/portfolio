@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  --black: #02111B;
+  --pink: #DD9296;
+  --grey: #717C89;
+  --blue: #BEE7E8;
+  --white: #FFFFFF;
+
+  color: var(--black);
+}
+
+// NAV BAR
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  margin: 1.2rem;
+  min-width: fit-content;
+
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--black);
+    padding: .2rem;
+  }
+
+  a:hover {
+    background-color: var(--black);
+    color: white;
+    border-radius: 2px solid pink;
+    transition: .4s;
+  }
+}
+
+// ABOUT
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-size: 2rem;
+    width: 100%;
+    min-height: fit-content;
+
+    h1 {
+      font-size: 20vw;
+      margin: 5% 0;
+      min-width: fit-content;
+    }
+
+    section {
+      margin: 0 15%;
+      text-align: justify;
+
+      .bold {
+        font-weight: 800;
+      }
+    }
+  }

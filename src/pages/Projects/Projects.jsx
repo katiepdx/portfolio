@@ -2,8 +2,8 @@ import React from 'react'
 import { AcademicAdvProject } from './AcademicAdvProject'
 import { AlchemyNetworkrProject } from './AlchemyNetworkrProject'
 import { CumulusProject } from './CumulusProject'
-import './Projects.scss'
 import { TheCanaryProject } from './TheCanaryProject'
+import '../../App.scss'
 
 export const Projects = () => {
   return (

@@ -1,9 +1,10 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
-import './Contact.scss'
+import '../App.scss'
 import linkedInIcon from '../assets/icons/linkedin-icon.png'
 import githubIcon from '../assets/icons/github-icon.png'
 import emailIcon from '../assets/icons/email-icon.png'
+
 
 export const Contact = () => {
 

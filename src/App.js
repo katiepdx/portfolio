@@ -10,6 +10,7 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Projects } from './pages/Projects/Projects';
 import { TechStack } from './pages/TechStack';
+import './App.scss'
 
 export default function App() {
   return (
@@ -45,6 +46,7 @@ export default function App() {
         </Switch>
 
         {/* <Footer /> */}
+
       </Router>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import './TechStack.scss'
+import '../App.scss'
 
 export const TechStack = () => {
   return (

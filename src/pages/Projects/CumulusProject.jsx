@@ -1,5 +1,5 @@
 import React from 'react'
-import './Projects.scss'
+import '../../App.scss'
 import githubIcon from '../../assets/icons/github-icon.png'
 import netlifyIcon from '../../assets/icons/netlify-icon.png'
 import herokuIcon from '../../assets/icons/heroku-icon.png'
