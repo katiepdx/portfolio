@@ -2,9 +2,7 @@
 
 * {
   --black: #02111B;
-  --pink: #DD9296;
   --grey: #717C89;
-  --blue: #BEE7E8;
   --white: #FFFFFF;
 }
 
@@ -36,8 +34,7 @@ nav {
 
   a:hover {
     background-color: var(--black);
-    color: white;
-    border-radius: 2px solid pink;
+    color: var(--white);
     transition: .4s;
   }
 }
@@ -99,6 +96,69 @@ nav {
   @media (max-width: 770px) {
     .tech-stack {
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+
+// CONTACT FORM
+.contact-container {
+  @include flex-center-content;
+  
+  form {
+    @include flex-center-content;
+    text-align: start;
+
+    background-color: var(--black);
+    border-radius: 2%;
+    padding: 20px;
+    width: 90vw;
+    max-width: 400px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+      color: var(--white);
+      margin-bottom: 5%;
+      width: 100%;
+    }
+
+    textarea {
+      height: 100px;
+      width: 100%;
+      resize: none;
+    }
+
+    input {
+      border: none;
+      font-size: 1rem;
+    }
+    input:focus {
+      border-bottom: 2px solid var(--white);
+      outline: none;
+      transition: border-bottom .2s;
+    }
+
+    button {
+      background-color: var(--white);
+      border: none;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.164);
+      color: var(--white);
+    }
+  }
+  .contact-icons {
+    display: flex;
+    align-items: center;
+    
+    img {
+      height: 40px;
+      width: 40px;
+      margin-top: 5px;
     }
   }
 }
