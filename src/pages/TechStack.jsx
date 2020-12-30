@@ -1,5 +1,5 @@
 import React from 'react'
-import './TechStack.scss'
+import '../App.scss'
 
 export const TechStack = () => {
   return (
@@ -7,7 +7,7 @@ export const TechStack = () => {
       <h1>Tech Stack</h1>
 
       <section className='tech-stack'>
-        <div>
+        <section>
           {/* LANGUAGES */}
           <section>
             <h2>Languages</h2>
@@ -27,7 +27,7 @@ export const TechStack = () => {
               <ul>Supertest</ul>
             </li>
           </section>
-        </div>
+        </section>
 
         {/* FRAMEWORKS/LIBRARIES */}
         <section>
@@ -43,7 +43,7 @@ export const TechStack = () => {
           </li>
         </section>
 
-        <div>
+        <section>
           {/* DATABASE */}
           <section>
             <h2>Database</h2>
@@ -52,9 +52,9 @@ export const TechStack = () => {
             </li>
           </section>
 
-          {/* TOOLS */}
+          {/* DEV TOOLS */}
           <section>
-            <h2>Tools</h2>
+            <h2>Dev Tools</h2>
             <li>
               <ul>Github</ul>
               <ul>Postman</ul>
@@ -64,8 +64,7 @@ export const TechStack = () => {
               <ul>VSCode</ul>
             </li>
           </section>
-        </div>
-
+        </section>
       </section>
     </section>
   )

@@ -1,14 +1,16 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
-import './Contact.scss'
+import '../App.scss'
 import linkedInIcon from '../assets/icons/linkedin-icon.png'
 import githubIcon from '../assets/icons/github-icon.png'
 import emailIcon from '../assets/icons/email-icon.png'
+
 
 export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log('click')
 
     const successEvent = (result) => {
       console.log('Success', result.text)
@@ -34,22 +36,22 @@ export const Contact = () => {
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">
           Name:
-          <input type="text" id="name" placeholder="John Smith" name="from_name" />
+          <input type="text" id="name" placeholder="John Smith" name="from_name" required />
         </label>
 
         <label htmlFor="email">
           Email:
-          <input type="text" id="email" placeholder="john@email.com" name="from_email" />
+          <input type="text" id="email" placeholder="john@email.com" name="from_email" required />
         </label>
 
         <label htmlFor="subject">
           Subject:
-          <input type="text" id="subject" placeholder="Subject" name="subject" />
+          <input type="text" id="subject" placeholder="Subject" name="subject" required />
         </label>
 
         <label htmlFor="message">
           Message:
-          <textarea type="text" id="message" placeholder="Message..." name="message" />
+          <textarea type="text" id="message" placeholder="Message..." name="message" required />
         </label>
 
         <button>Send</button>
