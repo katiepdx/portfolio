@@ -6,6 +6,17 @@
   --white: #FFFFFF;
 }
 
+@mixin sidebar-styles {
+  display: grid;
+  grid-template-columns: 10vw auto;
+
+  h1 {
+    font-size: 5vw;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+}
+
 @mixin flex-center-content {
   display: flex;
   flex-direction: column;
@@ -66,14 +77,7 @@ nav {
 // TECH STACK
 .tech-stack-container {
   border: 2px solid black;
-  display: grid;
-  grid-template-columns: 10vw auto;
-
-  h1 {
-    font-size: 5vw;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-  }
+  @include sidebar-styles;
 
   .tech-stack {
     display: grid;
@@ -100,6 +104,54 @@ nav {
   }
 }
 
+// PROJECTS
+.projects-container {
+  border: 2px solid black;
+  @include sidebar-styles;
+
+  // Mobile view
+  @media (max-width: 522px) {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      display: none;
+    }
+
+    section {
+      margin: 2%;
+    }
+  }
+
+  .all-projects {
+    // Single project section
+    section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 2%;
+
+      border: 2px solid black;
+      padding: 2%;
+      margin-bottom: 2%;
+
+      p {
+        text-align: justify;
+      }
+
+      .project-link-icons {
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
 
 // CONTACT FORM
 .contact-container {
