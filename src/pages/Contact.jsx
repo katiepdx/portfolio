@@ -1,13 +1,12 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import '../App.scss'
+import FadeIn from 'react-fade-in'
 import linkedInIcon from '../assets/icons/linkedin-icon.png'
 import githubIcon from '../assets/icons/github-icon.png'
 import emailIcon from '../assets/icons/email-icon.png'
 
-
 export const Contact = () => {
-
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('click')
@@ -29,45 +28,50 @@ export const Contact = () => {
 
     e.target.reset()
   }
+
   return (
     <div className='contact-container'>
       <h1>Let's Connect!</h1>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">
-          Name:
+      <FadeIn>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">
+            Name:
           <input type="text" id="name" placeholder="John Smith" name="from_name" required />
-        </label>
+          </label>
 
-        <label htmlFor="email">
-          Email:
+          <label htmlFor="email">
+            Email:
           <input type="text" id="email" placeholder="john@email.com" name="from_email" required />
-        </label>
+          </label>
 
-        <label htmlFor="subject">
-          Subject:
+          <label htmlFor="subject">
+            Subject:
           <input type="text" id="subject" placeholder="Subject" name="subject" required />
-        </label>
+          </label>
 
-        <label htmlFor="message">
-          Message:
+          <label htmlFor="message">
+            Message:
           <textarea type="text" id="message" placeholder="Message..." name="message" required />
-        </label>
+          </label>
 
-        <button>Send</button>
-      </form>
+          <button>Send</button>
+        </form>
+      </FadeIn>
 
-      <div className='contact-icons'>
-        <a href="https://github.com/katiepdx" target="_blank" rel="noreferrer" >
-          <img src={githubIcon} alt="black and white github icon" className="github-icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/katiepdx/" target="_blank" rel="noreferrer" >
-          <img src={linkedInIcon} alt="black and white linkedin icon" className="linkedin-icon" />
-        </a>
-        <a href="mailto:katieperry.dev@gmail.com">
-          <img src={emailIcon} alt=" black and white envelope icon" className='email-icon' />
-        </a>
-      </div>
+      <FadeIn delay={200}>
+        <div className='contact-icons'>
+          <a href="https://github.com/katiepdx" target="_blank" rel="noreferrer" >
+            <img src={githubIcon} alt="black and white github icon" className="github-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/katiepdx/" target="_blank" rel="noreferrer" >
+            <img src={linkedInIcon} alt="black and white linkedin icon" className="linkedin-icon" />
+          </a>
+          <a href="mailto:katieperry.dev@gmail.com">
+            <img src={emailIcon} alt=" black and white envelope icon" className='email-icon' />
+          </a>
+        </div>
+      </FadeIn>
     </div>
   )
 }

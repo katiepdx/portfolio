@@ -4,6 +4,7 @@ import { AlchemyNetworkrProject } from './AlchemyNetworkrProject'
 import { CumulusProject } from './CumulusProject'
 import { TheCanaryProject } from './TheCanaryProject'
 import '../../App.scss'
+import FadeIn from 'react-fade-in'
 
 export const Projects = () => {
   return (
@@ -11,10 +12,12 @@ export const Projects = () => {
       <h1>Projects</h1>
 
       <div className='all-projects'>
-        <TheCanaryProject />
-        <AlchemyNetworkrProject />
-        <CumulusProject />
-        <AcademicAdvProject />
+        <FadeIn>
+          <TheCanaryProject />
+          <AlchemyNetworkrProject />
+          <CumulusProject />
+          <AcademicAdvProject />
+        </FadeIn>
       </div>
     </div>
   )
