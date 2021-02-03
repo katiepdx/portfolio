@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
 * {
   --black: #02111B;
   --grey: #717C89;
   --white: #FFFFFF;
+  box-sizing: border-box;
 }
 
 @mixin sidebar-styles {
@@ -47,6 +46,10 @@ nav {
     background-color: var(--black);
     color: var(--white);
     transition: .4s;
+  }
+  @media (max-width: 522px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
